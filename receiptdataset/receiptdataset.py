@@ -3,6 +3,9 @@ import os
 import json
 from PIL import Image
 
+path_to_home = "../"
+#path_to_home = "./drive/MyDrive/receiptlayoutlm/"
+
 class ReceiptDataset(datasets.GeneratorBasedBuilder):
 
     def _info(self):
@@ -22,7 +25,7 @@ class ReceiptDataset(datasets.GeneratorBasedBuilder):
         return [
             datasets.SplitGenerator(
                 name=datasets.Split.TRAIN,
-                gen_kwargs={'data_dir': '../data'}
+                gen_kwargs={'data_dir': path_to_home + "data"}
             )
         ]
 
