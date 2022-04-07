@@ -3,7 +3,7 @@ import os
 import json
 from PIL import Image
 
-path_to_home = "../"
+path_to_home = "../../"
 #path_to_home = "./drive/MyDrive/receiptlayoutlm/"
 
 class ReceiptDataset(datasets.GeneratorBasedBuilder):
